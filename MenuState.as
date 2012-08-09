@@ -37,6 +37,9 @@ package
         [Embed(source = 'data/levels/Level10.oel', mimeType = 'application/octet-stream')]
             private var Level10:Class;
 
+        [Embed(source = 'data/levels/Level11.oel', mimeType = 'application/octet-stream')]
+            private var Level11:Class;
+
 		override public function create():void
 		{
 			var t:FlxText;
@@ -48,77 +51,64 @@ package
 			t.alignment = "center";
 			add(t);
 			
-
-			// guessing at difficulty
-			// 2, 6, 4, 5, 3, 1, 7
-
-			// add the buttons for the levels
-
-			var b:FlxButton;
-			var p:PlayState = new PlayState();
-			b = new FlxButton(10, 20,"1",function():void{
-				p.loadLevel(new OgmoLevel(new Level2));
-				FlxG.switchState(p);
-			});
-			add(b);
-
-			b = new FlxButton(10, 40,"2",function():void{
-				p.loadLevel(new OgmoLevel(new Level6));
-				FlxG.switchState(p);
-			});
-			add(b);
-
-			b = new FlxButton(10, 60,"3",function():void{
-				p.loadLevel(new OgmoLevel(new Level4));
-				FlxG.switchState(p);
-			});
-			add(b);
-
-			b = new FlxButton(10, 80,"4",function():void{
-				p.loadLevel(new OgmoLevel(new Level5));
-				FlxG.switchState(p);
-			});
-			add(b);
-
-			b = new FlxButton(10, 100,"5",function():void{
-				p.loadLevel(new OgmoLevel(new Level3));
-				FlxG.switchState(p);
-			});
-			add(b);
-
-			b = new FlxButton(10, 120,"6",function():void{
-				p.loadLevel(new OgmoLevel(new Level1));
-				FlxG.switchState(p);
-			});
-			add(b);
-			b = new FlxButton(10, 140,"7",function():void{
-				p.loadLevel(new OgmoLevel(new Level7));
-				FlxG.switchState(p);
-			});
-			add(b);
-			b = new FlxButton(10, 160,"8",function():void{
-				p.loadLevel(new OgmoLevel(new Level8));
-				FlxG.switchState(p);
-			});
-			add(b);
-			b = new FlxButton(10, 180,"9",function():void{
-				p.loadLevel(new OgmoLevel(new Level9));
-				FlxG.switchState(p);
-			});
-			add(b);
-			b = new FlxButton(10, 200,"10",function():void{
-				p.loadLevel(new OgmoLevel(new Level10));
-				FlxG.switchState(p);
-			});
-			add(b);
-			/*
-			b = new FlxButton(10, 160,"2P",function():void{
-				p.loadLevel(new OgmoLevel(new TwoPlayer));
-				FlxG.switchState(p);
-			});
-			add(b);
-			*/
-			
+			var LevelOrder:Array = [
+				{
+					level:Level2,
+					lname: "1"
+				}, 
+				{
+					level:Level6,
+					lname: "2"
+				}, 
+				{
+					level:Level4,
+					lname: "3"
+				}, 
+				{
+					level:Level5,
+					lname: "4"
+				}, 
+				{
+					level:Level3,
+					lname: "5"
+				}, 
+				{
+					level:Level1,
+					lname: "6"
+				}, 
+				{
+					level:Level7,
+					lname: "7"
+				}, 
+				{
+					level:Level8,
+					lname: "8"
+				}, 
+				{
+					level:Level9,
+					lname: "9"
+				}, 
+				{
+					level:Level10,
+					lname: "10"
+				}, 
+				{
+					level:Level11,
+					lname: "11"
+				}, 
+			];
+			var i:int = 1;
+			for each(var obj in LevelOrder)
+			{
+				var b:FlxButton;
+				var p:PlayState = new PlayState();
+				b = new FlxButton(10, i*20,obj.lname,function():void{
+					p.loadLevel(new OgmoLevel(new obj.level));
+					FlxG.switchState(p);
+				});
+				add(b);
+				i++;
+			}			
 			FlxG.mouse.show();
 		}
 

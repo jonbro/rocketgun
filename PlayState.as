@@ -169,9 +169,7 @@ package
 			{
 				//Create a simple FlxSprite
 				var trinket:Trinket = new Trinket(t.@x, t.@y);
-				trinket.loadGraphic(ImgTrinket, true, false, 16);
-				trinket.addAnimation("ani", [0, 1, 2, 3], 15);
-				trinket.play("ani");
+				trinket.loadGraphic(ImgTrinket, false, false, 16, 32);
 				add(trinket);
 				_items.add(trinket);
 			}
