@@ -1,6 +1,7 @@
 package
 {
 	import org.flixel.*;
+	import flash.utils.getDefinitionByName;
 
 	public class MenuState extends FlxState
 	{
@@ -53,62 +54,65 @@ package
 			
 			var LevelOrder:Array = [
 				{
-					level:Level2,
+					'level':Level2,
 					lname: "1"
 				}, 
 				{
-					level:Level6,
+					'level':Level6,
 					lname: "2"
 				}, 
 				{
-					level:Level4,
+					'level':Level4,
 					lname: "3"
 				}, 
 				{
-					level:Level5,
+					'level':Level5,
 					lname: "4"
 				}, 
 				{
-					level:Level3,
+					'level':Level3,
 					lname: "5"
 				}, 
 				{
-					level:Level1,
+					'level':Level1,
 					lname: "6"
 				}, 
 				{
-					level:Level7,
+					'level':Level7,
 					lname: "7"
 				}, 
 				{
-					level:Level8,
+					'level':Level8,
 					lname: "8"
 				}, 
 				{
-					level:Level9,
+					'level':Level9,
 					lname: "9"
 				}, 
 				{
-					level:Level10,
+					'level':Level10,
 					lname: "10"
 				}, 
 				{
-					level:Level11,
+					'level':Level11,
 					lname: "11"
 				}, 
 			];
 			var i:int = 1;
-			for each(var obj in LevelOrder)
-			{
-				var b:FlxButton;
-				var p:PlayState = new PlayState();
-				b = new FlxButton(10, i*20,obj.lname,function():void{
-					p.loadLevel(new OgmoLevel(new obj.level));
+			var b:FlxButton;
+			var makeCallback:Function = function(l) { return function():void{
+					var p:PlayState = new PlayState();
+					p.loadLevel(new OgmoLevel(l));
 					FlxG.switchState(p);
-				});
+				};
+			};
+			for each(var obj:Object in LevelOrder)
+			{
+				b = new FlxButton(10, i*20, obj.lname, makeCallback(new obj['level']()));
 				add(b);
 				i++;
-			}			
+			}
+
 			FlxG.mouse.show();
 		}
 
