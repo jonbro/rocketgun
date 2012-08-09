@@ -3,7 +3,7 @@
   <height>480</height>
   <stage set="tiles" tileWidth="16" tileHeight="16">
     <tile id="7" x="640" y="0"/>
-    <tile id="16" x="240" y="144"/>
+    <tile id="23" x="16" y="80"/>
   </stage>
   <stage2 set="tiles" tileWidth="16" tileHeight="16">
     <tile id="7" x="16" y="336"/>
@@ -77,10 +77,20 @@
     <rect id="5" x="416" y="352" w="48" h="48"/>
     <rect id="5" x="416" y="32" w="48" h="192"/>
     <rect id="5" x="160" y="48" w="48" h="256"/>
-    <rect id="34" x="0" y="400" w="640" h="16"/>
     <rect id="7" x="0" y="0" w="640" h="32"/>
-    <rect id="1" x="0" y="64" w="16" h="336"/>
-    <rect id="1" x="624" y="64" w="16" h="336"/>
+    <rect id="1" x="0" y="64" w="16" h="416"/>
+    <rect id="1" x="624" y="64" w="16" h="416"/>
+    <tile id="1" x="16" y="400"/>
+    <tile id="1" x="608" y="400"/>
+    <tile id="1" x="16" y="416"/>
+    <tile id="1" x="608" y="416"/>
+    <tile id="34" x="16" y="432"/>
+    <tile id="34" x="608" y="432"/>
+    <rect id="34" x="48" y="400" w="544" h="16"/>
+    <tile id="1" x="32" y="400"/>
+    <tile id="1" x="592" y="400"/>
+    <tile id="34" x="32" y="416"/>
+    <tile id="34" x="592" y="416"/>
   </stage2>
   <actors>
     <spikes_round x="544" y="64" height="16"/>
@@ -102,6 +112,6 @@
     <ObjectFlip x="176" y="352"/>
     <ObjectFlip x="304" y="96"/>
     <ObjectFlip x="448" y="288"/>
-    <trinket x="592" y="96"/>
+    <trinket x="592" y="80"/>
   </actors>
 </level>
