@@ -31,6 +31,12 @@ package
         [Embed(source = 'data/levels/Level8.oel', mimeType = 'application/octet-stream')]
             private var Level8:Class;
 
+        [Embed(source = 'data/levels/Level9.oel', mimeType = 'application/octet-stream')]
+            private var Level9:Class;
+
+        [Embed(source = 'data/levels/Level10.oel', mimeType = 'application/octet-stream')]
+            private var Level10:Class;
+
 		override public function create():void
 		{
 			var t:FlxText;
@@ -92,6 +98,16 @@ package
 			add(b);
 			b = new FlxButton(10, 160,"8",function():void{
 				p.loadLevel(new OgmoLevel(new Level8));
+				FlxG.switchState(p);
+			});
+			add(b);
+			b = new FlxButton(10, 180,"9",function():void{
+				p.loadLevel(new OgmoLevel(new Level9));
+				FlxG.switchState(p);
+			});
+			add(b);
+			b = new FlxButton(10, 200,"10",function():void{
+				p.loadLevel(new OgmoLevel(new Level10));
 				FlxG.switchState(p);
 			});
 			add(b);
