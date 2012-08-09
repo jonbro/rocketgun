@@ -17,14 +17,15 @@
 			<object name="spikes_left" image="spikes_left.png" width="16" height="16" resizableY="true" tile="true"/>
 			<object name="spikes_right" image="spikes_right.png" width="16" height="16" resizableY="true" tile="true"/>
 			<object name="spikes_top" image="spikes_top.png" width="16" height="16" resizableX="true" tile="true"/>
+
 			<object name="spikes_round" image="spikes_round.png" width="16" height="16" resizableY="true" tile="true"/>
 			<object name="spikes_top_nob" image="spikes_top_nob.png" width="16" height="16" resizableY="true" tile="true"/>
 			<object name="spikes_bottom_nob" image="spikes_bottom_nob.png" width="16" height="16" resizableX="true" tile="true"/>
 			<object name="spikes_corner_bottom_left" image="spikes_corner_bottom_left.png" width="16" height="16" resizableY="true" tile="true"/>
+
 			<object name="spikes_corner_bottom_right" image="spikes_corner_bottom_right.png" width="16" height="16" resizableY="true" tile="true"/>
 			<object name="spikes_corner_top_left" image="spikes_corner_top_left.png" width="16" height="16" resizableX="true" tile="true"/>
 			<object name="spikes_corner_top_right" image="spikes_corner_top_right.png" width="16" height="16" resizableX="true" tile="true"/>
-
 		</folder>
 		<object name="gun" image="gun.png" width="32" height="32">
 			<values>
@@ -34,7 +35,7 @@
 			</values>
 		</object>
 		<object name="trinket" image="trinket_editor.png" width="16" height="16"/>
-		<object name="ObjectFlip" image="trinket_editor.png" width="16" height="16"/>
+		<object name="ObjectFlip" image="ObjectFlip.png" width="16" height="16"/>
 	</objects>
 	<layers>
 		<tiles name="stage" gridSize="16" exportTileSize="true" exportTileIDs="true" />
