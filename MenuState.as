@@ -8,6 +8,12 @@ package
         [Embed(source = 'data/levels/Level1.oel', mimeType = 'application/octet-stream')]
             private var Level1:Class;
 
+        [Embed(source = 'data/levels/Level1_2.oel', mimeType = 'application/octet-stream')]
+            private var Level1_2:Class;
+
+        [Embed(source = 'data/levels/Level1_3.oel', mimeType = 'application/octet-stream')]
+            private var Level1_3:Class;
+
         [Embed(source = 'data/levels/Level2.oel', mimeType = 'application/octet-stream')]
             private var Level2:Class;
 
@@ -54,20 +60,28 @@ package
 			
 			var LevelOrder:Array = [
 				{
-					'level':Level2,
+					'level':Level1,
 					lname: "1"
 				}, 
 				{
-					'level':Level6,
+					'level':Level1_2,
 					lname: "2"
 				}, 
 				{
-					'level':Level4,
+					'level':Level1_3,
 					lname: "3"
 				}, 
 				{
-					'level':Level5,
+					'level':Level6,
 					lname: "4"
+				}, 
+				{
+					'level':Level4,
+					lname: "5"
+				}, 
+				{
+					'level':Level5,
+					lname: "6"
 				}, 
 				{
 					'level':Level3,
