@@ -1,0 +1,36 @@
+<project>
+	<name>Example Project</name>
+	<settings>
+		<defaultWidth>640</defaultWidth>
+		<defaultHeight>480</defaultHeight>
+		<workingDirectory>../</workingDirectory>
+	</settings>
+	<tilesets>
+		<tileset name="tiles" image="tiles.png" tileWidth="16" tileHeight="16" />
+	</tilesets>
+	<objects>
+		<object name="patrol" image="spike_ball.png" width="16" height="16">
+			<nodes drawObject="true" lineMode="1" />
+		</object>
+		<folder name="dangers" image="spikes.png">
+			<object name="spikes" image="spikes.png" width="16" height="16" resizableX="true" tile="true"/>
+			<object name="spikes_left" image="spikes_left.png" width="16" height="16" resizableY="true" tile="true"/>
+			<object name="spikes_right" image="spikes_right.png" width="16" height="16" resizableY="true" tile="true"/>
+			<object name="spikes_top" image="spikes_top.png" width="16" height="16" resizableX="true" tile="true"/>
+		</folder>
+		<object name="gun" image="gun.png" width="32" height="32">
+			<values>
+				<integer name="flip" min="0" max="1" default="0" />
+				<string name="rocket" default="Z" maxChars="1" />
+				<string name="gun" default="X" maxChars="1" />
+			</values>
+		</object>
+		<object name="trinket" image="trinket_editor.png" width="16" height="16"/>
+		<object name="ObjectFlip" image="trinket_editor.png" width="16" height="16"/>
+	</objects>
+	<layers>
+		<tiles name="stage" gridSize="16" exportTileSize="true" exportTileIDs="true" />
+		<tiles name="stage2" gridSize="16" exportTileSize="true" exportTileIDs="true" />
+		<objects name="actors" gridSize="16" />
+	</layers>
+</project>

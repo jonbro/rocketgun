@@ -1,0 +1,26 @@
+<level>
+  <width>640</width>
+  <height>480</height>
+  <stage2 set="tiles" tileWidth="16" tileHeight="16">
+    <rect id="1" x="0" y="0" w="640" h="128"/>
+    <rect id="1" x="0" y="336" w="640" h="144"/>
+    <rect id="1" x="112" y="256" w="416" h="80"/>
+    <rect id="1" x="0" y="128" w="16" h="208"/>
+    <rect id="1" x="624" y="128" w="16" h="208"/>
+  </stage2>
+  <actors>
+    <gun x="560" y="304"/>
+    <trinket x="48" y="304"/>
+    <spikes_right x="608" y="128" height="208"/>
+    <spikes_left x="16" y="128" height="208"/>
+    <patrol x="432" y="128">
+      <node x="432" y="240"/>
+      <node x="432" y="128"/>
+    </patrol>
+    <patrol x="272" y="160">
+      <node x="272" y="160"/>
+      <node x="272" y="240"/>
+      <node x="272" y="128"/>
+    </patrol>
+  </actors>
+</level>

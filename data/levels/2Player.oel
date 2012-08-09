@@ -1,0 +1,16 @@
+<level>
+  <width>640</width>
+  <height>480</height>
+  <stage set="tiles" tileWidth="16" tileHeight="16">
+    <rect id="1" x="0" y="0" w="16" h="480"/>
+    <rect id="1" x="16" y="464" w="608" h="16"/>
+    <rect id="1" x="624" y="0" w="16" h="480"/>
+    <rect id="1" x="16" y="0" w="608" h="16"/>
+  </stage>
+  <actors>
+    <gun x="528" y="288" flip="0" rocket="Z" gun="X"/>
+    <gun x="80" y="288" flip="1" rocket="N" gun="M"/>
+    <spikes_left x="16" y="16" height="448"/>
+    <spikes_right x="608" y="16" height="448"/>
+  </actors>
+</level>
