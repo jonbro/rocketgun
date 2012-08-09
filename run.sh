@@ -1,2 +1,0 @@
-#!/bin/bash
-~/flex_sdk/bin/mxmlc ./RocketGun.as -incremental=true -debug=true -static-link-runtime-shared-libraries=true && ~/flex_sdk/runtimes/player/11.1/mac/Flash\ Player\ Debugger.app/Contents/MacOS/Flash\ Player\ Debugger RocketGun.swf
