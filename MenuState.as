@@ -28,6 +28,9 @@ package
         [Embed(source = 'data/levels/2Player.oel', mimeType = 'application/octet-stream')]
             private var TwoPlayer:Class;
 
+        [Embed(source = 'data/levels/Level8.oel', mimeType = 'application/octet-stream')]
+            private var Level8:Class;
+
 		override public function create():void
 		{
 			var t:FlxText;
@@ -87,7 +90,11 @@ package
 				FlxG.switchState(p);
 			});
 			add(b);
-
+			b = new FlxButton(10, 160,"8",function():void{
+				p.loadLevel(new OgmoLevel(new Level8));
+				FlxG.switchState(p);
+			});
+			add(b);
 			/*
 			b = new FlxButton(10, 160,"2P",function():void{
 				p.loadLevel(new OgmoLevel(new TwoPlayer));

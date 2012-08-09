@@ -1,0 +1,14 @@
+<level>
+  <width>640</width>
+  <height>480</height>
+  <stage set="tiles" tileWidth="16" tileHeight="16">
+    <tile id="1" x="0" y="432"/>
+  </stage>
+  <stage2 set="tiles" tileWidth="16" tileHeight="16">
+    <tile id="1" x="0" y="416"/>
+  </stage2>
+  <actors>
+    <gun x="16" y="384" flip="0" rocket="Z" gun="X"/>
+    <trinket x="576" y="32"/>
+  </actors>
+</level>
