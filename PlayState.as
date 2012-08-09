@@ -31,6 +31,16 @@ package
 		[Embed(source = 'data/spikes_right.png')] private var ImgSpikesRight:Class;
 		[Embed(source = 'data/spikes_top.png')] private var ImgSpikesTop:Class;
 
+		[Embed(source = 'data/spikes_round.png')] private var ImgSpikesRound:Class;
+		[Embed(source = 'data/spikes_top_nob.png')] private var ImgSpikesTopNob:Class;
+		[Embed(source = 'data/spikes_bottom_nob.png')] private var ImgSpikesBottomNob:Class;
+		[Embed(source = 'data/spikes_corner_bottom_left.png')] private var ImgSpikesCornerBottomLeft:Class;
+
+		[Embed(source = 'data/spikes_corner_bottom_right.png')] private var ImgSpikesCornerBottomRight:Class;
+		[Embed(source = 'data/spikes_corner_top_left.png')] private var ImgSpikesCornerTopLeft:Class;
+		[Embed(source = 'data/spikes_corner_top_right.png')] private var ImgSpikesCornerTopRight:Class;
+
+
 		[Embed(source = 'data/spike_ball.png')] private var ImgSpikeBall:Class;
 
 		[Embed(source = 'data/trinket.png')] private var ImgTrinket:Class;
@@ -122,8 +132,8 @@ package
 				patrol.followPath(patrol.path, 100, FlxObject.PATH_LOOP_FORWARD);
 			}
 			//add in the spike dangers
-			var spikeTypes:Array = ["spikes", "spikes_top", "spikes_left", "spikes_right"];
-			var spikeImg:Object = {"spikes":ImgSpikes, "spikes_top":ImgSpikesTop, "spikes_left":ImgSpikesLeft, "spikes_right":ImgSpikesRight};
+			var spikeTypes:Array = ["spikes", "spikes_top", "spikes_left", "spikes_right","spikes_round", "spikes_top_nob", "spikes_bottom_nob", "spikes_corner_bottom_left", "spikes_corner_bottom_right", "spikes_corner_top_left", "spikes_corner_top_right"];
+			var spikeImg:Object = {"spikes":ImgSpikes, "spikes_top":ImgSpikesTop, "spikes_left":ImgSpikesLeft, "spikes_right":ImgSpikesRight,"spikes_round":ImgSpikesRound, "spikes_top_nob":ImgSpikesTopNob, "spikes_bottom_nob":ImgSpikesBottomNob, "spikes_corner_bottom_left":ImgSpikesCornerBottomLeft, "spikes_corner_bottom_right":ImgSpikesCornerBottomRight, "spikes_corner_top_left":ImgSpikesCornerTopLeft, "spikes_corner_top_right":ImgSpikesCornerTopRight};
 			for each(var st:String in spikeTypes)
 			{
 				for each(var s:XML in level.xml.actors[0][st])

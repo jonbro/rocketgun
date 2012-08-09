@@ -3,6 +3,7 @@
   <height>480</height>
   <stage set="tiles" tileWidth="16" tileHeight="16">
     <tile id="1" x="0" y="432"/>
+    <rect id="5" x="128" y="160" w="96" h="48"/>
   </stage>
   <stage2 set="tiles" tileWidth="16" tileHeight="16">
     <tile id="1" x="0" y="416"/>
@@ -10,5 +11,16 @@
   <actors>
     <gun x="16" y="384" flip="0" rocket="Z" gun="X"/>
     <trinket x="576" y="32"/>
+    <spikes_corner_bottom_left x="112" y="208" height="16"/>
+    <spikes_corner_bottom_right x="224" y="208" height="16"/>
+    <spikes_corner_top_left x="112" y="144" width="16"/>
+    <spikes_corner_top_right x="224" y="144" width="16"/>
+    <spikes_left x="224" y="160" height="48"/>
+    <spikes_right x="112" y="160" height="48"/>
+    <spikes x="128" y="144" width="96"/>
+    <spikes_top x="128" y="208" width="96"/>
+    <spikes_round x="256" y="176" height="16"/>
+    <spikes_top_nob x="256" y="256" height="16"/>
+    <spikes_bottom_nob x="304" y="256" width="16"/>
   </actors>
 </level>
