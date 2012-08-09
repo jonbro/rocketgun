@@ -108,7 +108,7 @@ package
 			};
 			for each(var obj:Object in LevelOrder)
 			{
-				b = new FlxButton(10, i*20, obj.lname, makeCallback(new obj['level']()));
+				b = new FlxButton(10, i*20, ""+i, makeCallback(new obj['level']()));
 				add(b);
 				i++;
 			}
