@@ -1,6 +1,9 @@
 <level>
   <width>640</width>
   <height>480</height>
+  <stage set="tiles" tileWidth="16" tileHeight="16">
+    <tile id="1" x="0" y="0"/>
+  </stage>
   <stage2 set="tiles" tileWidth="16" tileHeight="16">
     <tile id="1" x="0" y="16"/>
     <tile id="1" x="0" y="32"/>
@@ -210,7 +213,7 @@
     <tile id="1" x="80" y="176"/>
   </stage2>
   <actors>
-    <gun x="16" y="96"/>
+    <gun x="16" y="96" flip="0" rocket="Z" gun="X"/>
     <spikes_right x="288" y="16" height="304"/>
     <spikes_top x="304" y="320" width="32"/>
     <spikes_left x="336" y="16" height="304"/>

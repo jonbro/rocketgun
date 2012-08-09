@@ -1,6 +1,14 @@
 <level>
   <width>640</width>
   <height>480</height>
+  <stage set="tiles" tileWidth="16" tileHeight="16">
+    <tile id="0" x="48" y="0"/>
+    <tile id="0" x="80" y="0"/>
+    <tile id="0" x="64" y="0"/>
+    <tile id="0" x="32" y="0"/>
+    <tile id="0" x="16" y="0"/>
+    <tile id="1" x="0" y="0"/>
+  </stage>
   <stage2 set="tiles" tileWidth="16" tileHeight="16">
     <tile id="1" x="0" y="16"/>
     <tile id="1" x="0" y="32"/>
@@ -194,7 +202,7 @@
       <node x="496" y="112"/>
     </patrol>
     <spikes x="176" y="448" width="320"/>
-    <gun x="16" y="272"/>
+    <gun x="16" y="272" flip="0" rocket="Z" gun="X"/>
     <spikes_top x="480" y="368" width="16"/>
     <spikes_left x="496" y="320" height="48"/>
     <spikes_right x="608" y="128" height="96"/>

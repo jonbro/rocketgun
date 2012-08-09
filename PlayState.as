@@ -36,8 +36,7 @@ package
 		[Embed(source = 'data/trinket.png')] private var ImgTrinket:Class;
 		[Embed(source = 'data/ObjectFlip.png')] private var ImgFlip:Class;
 
-        [Embed(source="data/tiles.png")]
-            private var ImgTiles:Class;
+        [Embed(source="data/tiles.png")] private var ImgTiles:Class;
 
 		protected var _rocketSmoke:FlxEmitter;
 		protected var _guns:FlxGroup;
