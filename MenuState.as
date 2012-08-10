@@ -47,6 +47,15 @@ package
         [Embed(source = 'data/levels/Level11.oel', mimeType = 'application/octet-stream')]
             private var Level11:Class;
 
+        [Embed(source = 'data/levels/Level12.oel', mimeType = 'application/octet-stream')]
+            private var Level12:Class;
+        [Embed(source = 'data/levels/Level13.oel', mimeType = 'application/octet-stream')]
+            private var Level13:Class;
+        [Embed(source = 'data/levels/Level14.oel', mimeType = 'application/octet-stream')]
+            private var Level14:Class;
+        [Embed(source = 'data/levels/Level15.oel', mimeType = 'application/octet-stream')]
+            private var Level15:Class;
+
 		override public function create():void
 		{
 			var t:FlxText;
@@ -109,6 +118,22 @@ package
 				}, 
 				{
 					'level':Level11,
+					lname: "11"
+				}, 
+				{
+					'level':Level12,
+					lname: "11"
+				}, 
+				{
+					'level':Level13,
+					lname: "11"
+				}, 
+				{
+					'level':Level14,
+					lname: "11"
+				}, 
+				{
+					'level':Level15,
 					lname: "11"
 				}, 
 			];
