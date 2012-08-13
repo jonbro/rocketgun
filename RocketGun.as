@@ -1,6 +1,6 @@
 package {
 	import org.flixel.*; //Allows you to refer to flixel objects in your code
-	[SWF(width="640", height="480", backgroundColor="#FFFFFF")] //Set the size and color of the Flash file
+	[SWF(width="640", height="480", backgroundColor="#af84b2")] //Set the size and color of the Flash file
 	[Frame(factoryClass="Preloader")]
 
 	public class RocketGun extends FlxGame

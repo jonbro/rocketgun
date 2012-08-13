@@ -153,6 +153,7 @@ package
 			}
 
 			FlxG.mouse.show();
+			FlxG.bgColor = 	0xFFaf84b2;
 		}
 
 		override public function update():void
