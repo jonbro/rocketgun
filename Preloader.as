@@ -7,7 +7,7 @@ package
 	{
 		public function Preloader()
 		{
-			className = "RocketGun";
+			className = "Main";
 			super();
 		}
 	}

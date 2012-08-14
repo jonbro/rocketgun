@@ -55,6 +55,11 @@ package
             private var Level14:Class;
         [Embed(source = 'data/levels/Level15.oel', mimeType = 'application/octet-stream')]
             private var Level15:Class;
+		[Embed(source = 'data/levels/title_screen.oel', mimeType = 'application/octet-stream')]
+            private var titleScreen:Class;
+
+		private var map:FlxTilemap;
+		private var map2:FlxTilemap;
 
 		override public function create():void
 		{
@@ -67,6 +72,13 @@ package
 			t.alignment = "center";
 			add(t);
 			
+			var level:OgmoLevel = new OgmoLevel(new titleScreen());
+			map = level.loadTilemap("stage", PlayState.ImgTiles);
+			add(map);
+			map2 = level.loadTilemap("stage2", PlayState.ImgTiles);
+			add(map2);
+
+
 			var LevelOrder:Array = [
 				{
 					'level':Level1,

@@ -46,7 +46,7 @@ package
 		[Embed(source = 'data/trinket.png')] private var ImgTrinket:Class;
 		[Embed(source = 'data/ObjectFlip.png')] private var ImgFlip:Class;
 
-        [Embed(source="data/tiles.png")] private var ImgTiles:Class;
+        [Embed(source="data/tiles.png")] public static var ImgTiles:Class;
 
 		protected var _rocketSmoke:FlxEmitter;
 		protected var _guns:FlxGroup;
@@ -95,15 +95,6 @@ package
 				// flip the the guns and change controls based on the settings in the file
 				if(g.@flip == 1){
 					gun.setFlip();
-				}
-				if(g.@gun != "" && g.@gun != null){
-					FlxG.log(g.@gun == " ");
-					FlxG.log(g.@gun == false);
-					FlxG.log("test");
-					//gun._gunKey = g.@gun;
-				}
-				if(g.@rocket != ""){
-					//gun._rocketKey = g.@rocket;
 				}
 				_guns.add(gun);
 				FlxG.mouse.show();
@@ -204,12 +195,11 @@ package
 		}
 		public function endGame():void
 		{
-			var t:FlxText;
-			t = new FlxText(0,FlxG.height/2-10,FlxG.width,"Game Over. Click or Z to Restart.");
-			t.size = 16;
-			t.alignment = "center";
+			// add the overlay
 			gameOver = true;
-			add(t);
+			var l:LoseState;
+			l = new LoseState();
+			add(l);
 		}
 		override public function update():void
 		{
@@ -217,14 +207,16 @@ package
 				currentReplay.recordFrame();
 			}
 			var ps:PlayState = this;
-			FlxG.overlap(_items, _guns, function(Object1:LevelObject,Object2:Gun){
-				Object1.processGun(Object2, ps);
-			});
-			FlxG.overlap(_items, _bullets, function(Object1:LevelObject,Object2:Bullet){
-				Object1.processBullet(Object2, ps);
-			});
-			FlxG.collide(_bullets, map2);
-			FlxG.collide(_guns, map2);
+			if(!gameOver){
+				FlxG.overlap(_items, _guns, function(Object1:LevelObject,Object2:Gun){
+					Object1.processGun(Object2, ps);
+				});
+				FlxG.overlap(_items, _bullets, function(Object1:LevelObject,Object2:Bullet){
+					Object1.processBullet(Object2, ps);
+				});
+				FlxG.collide(_bullets, map2);
+				FlxG.collide(_guns, map2);				
+			}
 			if(gameOver){
 				if((FlxG.mouse.justPressed() || FlxG.keys.justPressed("Z")) && gameOver)
 				{
