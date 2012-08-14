@@ -9,6 +9,8 @@
     <rect id="35" x="144" y="80" w="352" h="320"/>
     <rect id="37" x="512" y="64" w="128" h="352"/>
     <rect id="37" x="0" y="64" w="128" h="352"/>
+    <rect id="37" x="0" y="0" w="640" h="64"/>
+    <rect id="37" x="0" y="416" w="640" h="64"/>
   </stage>
   <stage2 set="tiles" tileWidth="16" tileHeight="16">
     <tile id="26" x="144" y="80"/>
