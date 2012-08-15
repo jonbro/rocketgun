@@ -19,6 +19,12 @@
 				<string name="string" default="HELLO" maxChars="100" />
 			</values>
 		</object>
+		<object name="levelButton" image="level_button.png" width="64" height="64">
+			<values>
+				<string name="buttonText" default="1" maxChars="3" />
+				<string name="fileName" default="Level1" maxChars="100" />
+			</values>
+		</object>
 		<folder name="dangers" image="spikes.png">
 			<object name="spikes" image="spikes.png" width="16" height="16" resizableX="true" tile="true"/>
 			<object name="spikes_left" image="spikes_left.png" width="16" height="16" resizableY="true" tile="true"/>

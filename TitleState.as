@@ -80,6 +80,8 @@ package
 			map2 = level.loadTilemap("stage2", PlayState.ImgTiles);
 			add(map2);
 
+			// load in all the text from the ogmo editor
+
 			for each(var g:XML in level.xml.actors[0].textObj)
 			{
 				var font:FlxBitmapFont = new FlxBitmapFont(AssetsRegistry.BubbleFont, 8, 16, FlxBitmapFont.TEXT_SET2, 77);
@@ -94,76 +96,6 @@ package
 				add(font)
 			}
 
-			var LevelOrder:Array = [
-				{
-					'level':Level1,
-					lname: "1"
-				}, 
-				{
-					'level':Level1_2,
-					lname: "2"
-				}, 
-				{
-					'level':Level1_3,
-					lname: "3"
-				}, 
-				{
-					'level':Level6,
-					lname: "4"
-				}, 
-				{
-					'level':Level4,
-					lname: "5"
-				}, 
-				{
-					'level':Level5,
-					lname: "6"
-				}, 
-				{
-					'level':Level3,
-					lname: "5"
-				}, 
-				{
-					'level':Level1,
-					lname: "6"
-				}, 
-				{
-					'level':Level7,
-					lname: "7"
-				}, 
-				{
-					'level':Level8,
-					lname: "8"
-				}, 
-				{
-					'level':Level9,
-					lname: "9"
-				}, 
-				{
-					'level':Level10,
-					lname: "10"
-				}, 
-				{
-					'level':Level11,
-					lname: "11"
-				}, 
-				{
-					'level':Level12,
-					lname: "11"
-				}, 
-				{
-					'level':Level13,
-					lname: "11"
-				}, 
-				{
-					'level':Level14,
-					lname: "11"
-				}, 
-				{
-					'level':Level15,
-					lname: "11"
-				}, 
-			];
 			var i:int = 1;
 			var b:FlxButton;
 			var makeCallback:Function = function(l) { return function():void{
