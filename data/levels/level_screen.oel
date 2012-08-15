@@ -36,22 +36,22 @@
     <rect id="34" x="0" y="464" w="640" h="16"/>
   </stage2>
   <actors>
-    <levelButton x="48" y="112" buttonText="1" fileName="Level1"/>
-    <levelButton x="128" y="112" buttonText="2" fileName="Level2"/>
-    <levelButton x="208" y="112" buttonText="1" fileName="Level1"/>
-    <levelButton x="288" y="112" buttonText="1" fileName="Level1"/>
-    <levelButton x="368" y="112" buttonText="1" fileName="Level1"/>
-    <levelButton x="448" y="112" buttonText="1" fileName="Level1"/>
-    <levelButton x="528" y="112" buttonText="1" fileName="Level1"/>
-    <levelButton x="48" y="208" buttonText="1" fileName="Level1"/>
-    <levelButton x="128" y="208" buttonText="1" fileName="Level1"/>
-    <levelButton x="208" y="208" buttonText="1" fileName="Level1"/>
-    <levelButton x="288" y="208" buttonText="1" fileName="Level1"/>
-    <levelButton x="368" y="208" buttonText="1" fileName="Level1"/>
-    <levelButton x="448" y="208" buttonText="1" fileName="Level1"/>
-    <levelButton x="528" y="208" buttonText="1" fileName="Level1"/>
-    <levelButton x="208" y="304" buttonText="1" fileName="Level1"/>
-    <levelButton x="288" y="304" buttonText="1" fileName="Level1"/>
-    <levelButton x="368" y="304" buttonText="1" fileName="Level1"/>
+    <levelButton x="48" y="96" buttonText="01" fileName="Level1"/>
+    <levelButton x="128" y="96" buttonText="02" fileName="Level2"/>
+    <levelButton x="208" y="96" buttonText="03" fileName="Level3"/>
+    <levelButton x="288" y="96" buttonText="04" fileName="Level4"/>
+    <levelButton x="368" y="96" buttonText="05" fileName="Level5"/>
+    <levelButton x="448" y="96" buttonText="06" fileName="Level6"/>
+    <levelButton x="528" y="96" buttonText="07" fileName="Level7"/>
+    <levelButton x="48" y="208" buttonText="08" fileName="Level8"/>
+    <levelButton x="128" y="208" buttonText="09" fileName="Level9"/>
+    <levelButton x="208" y="208" buttonText="10" fileName="Level10"/>
+    <levelButton x="288" y="208" buttonText="11" fileName="Level11"/>
+    <levelButton x="368" y="208" buttonText="12" fileName="Level12"/>
+    <levelButton x="448" y="208" buttonText="13" fileName="Level13"/>
+    <levelButton x="528" y="208" buttonText="14" fileName="Level14"/>
+    <levelButton x="208" y="320" buttonText="15" fileName="Level15"/>
+    <levelButton x="288" y="320" buttonText="16" fileName="Level16"/>
+    <levelButton x="368" y="320" buttonText="17" fileName="Level17"/>
   </actors>
 </level>
